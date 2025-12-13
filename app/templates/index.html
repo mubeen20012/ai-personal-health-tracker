@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Health Tracker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Heading -->
+        <header class="header">
+            <h1>🫀 Personal Health Tracker</h1>
+            <h2 class="subtitle">AI-Powered Heart Disease Risk Assessment</h2>
+        </header>
+
+        <!-- Form Card -->
+        <form method="post" enctype="multipart/form-data" class="card form-card">
+
+            <!-- Section 1: Personal Info -->
+            <div class="section">
+                <h3>Personal Details</h3>
+                <div class="grid">
+                    <div class="input-group">
+                        <label>Age</label>
+                        <input type="number" name="Age" placeholder="Enter age" required>
+                    </div>
+                    <div class="input-group">
+                        <label>BMI</label>
+                        <input type="number" name="BMI" step="0.1" placeholder="Enter BMI" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Gender</label>
+                        <select name="Gender" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label>Resting BP</label>
+                        <input type="number" name="RestingBP" placeholder="e.g., 120" required>
+                    </div>
+                    <div class="input-group">
+                        <label>Cholesterol</label>
+                        <input type="number" name="Cholesterol" placeholder="e.g., 200" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: ECG Input -->
+            <div class="section">
+                <h3>ECG Signal</h3>
+                <textarea name="ecg_signal" rows="4" placeholder="Enter comma-separated ECG values: 0.1,0.2,0.3..." required></textarea>
+            </div>
+
+            <!-- Section 3: X-ray Upload -->
+            <div class="section">
+                <h3>X-ray Image (Optional)</h3>
+                <div class="upload-box">
+                    <input type="file" name="xray_image" accept="image/*">
+                    <p>Upload chest X-ray image for analysis (optional)</p>
+                </div>
+            </div>
+
+            <!-- Predict Button -->
+            <button type="submit" class="btn">Predict Heart Risk</button>
+        </form>
+    </div>
+</body>
+</html>
