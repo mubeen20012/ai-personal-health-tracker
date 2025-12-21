@@ -88,7 +88,7 @@ This project is for **educational and research purposes only**. It is not a cert
 ## 👩‍💻 Author
 **Musfira Mubeen** *Aspiring AI Engineer & Data Scientist*
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/YOUR_LINKEDIN_HERE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/https://www.linkedin.com/in/musfira-mubeen/)
 [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-red?style=flat&logo=youtube)](https://youtu.be/DGfnnwHmDkg)
 
 ⭐ *If you find this project interesting, feel free to star the repository!*
